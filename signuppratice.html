@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign Up | By Code Info</title>
+        <link rel="stylesheet" href="Css/style.css" />
+        <link rel="stylesheet" href="signuppratice.css">
+
+    </head>
+    <body>
+
+        <form action="signu.php" method="post" >
+            <div class="container">
+                <h1> SIGN UP </h1><br>
+                <p><b>BECOME A MEMBER OF SDG PROJECT</b></p>
+                <hr/><br><br>
+                
+                <label for="fa-first-name"><b>YOUR FIRST NAME</b></label>
+                <input type="fa-first-name" placeholder="ENTER YOUR FIRST NAME" name='fname' id='fa-first-name' required/>
+                
+                <label for="fa-last-name"><b>YOUR LAST NAME</b></label>
+                <input type="fa-last-name" placeholder="ENTER YOUR LAST NAME" name='lname' id='fa-last-name' required/>
+                
+                <label for="ygmail"><b>YOUR E-MAIL</b></label>
+                <input type="ygmail" placeholder="ENTER YOUR E-MAIL" name='email' id='email' required/>
+                
+                <label for="psw"><b>PASSWORD</b></label>
+                <input type="password" placeholder="ENTER THE PASSWORD" name='password' id='psw' required/>
+
+                <label for="psw_confirmation"><b>PASSWORD</b></label>
+                <input type="password_confirmation" placeholder="CONFIRM THE PASSWORD AGAIN" name='password_confirmation' id='psw_confirmation' required/>
+                
+                <p class="para-2">
+                    Already a Member? <a href="loginpage02.html">Login here</a>
+                </p>
+                <br>
+
+                <hr/>
+                <a href="login.php">
+                    <button class="registerbtn" type="sumbit">SUMBIT</button>
+                </a>
+            </form>
+        </div>    
+    
+        
+    </body>
+    </html>
+<!--
+
+    <?php
+$host = ""
+$FirstName = $_POST['FirstName'];
+$LastName = $_POST['LastName'];
+$ygmail = $_POST['ygmail'];
+$password = $_POST['password'];
+
+//Create connection 
+$conn = new mysql11('localhost','root','','test');
+
+// Check connection
+if ($conn->connection_error) {
+  die("Connection failed: " . $conn->connection_error);
+}else{
+    $stmt = $conn->prepare("insert into registration(FirstName,LastName,ygmail,password)
+    values(?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssss",$FirstName, $LastName, $ygmail, $password)
+    $stmt->execute();
+    echo "Connected successfully";
+    $stmt->close();
+    $conn->close();
+}
+
+-->

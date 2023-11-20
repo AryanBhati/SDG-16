@@ -1,0 +1,93 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-size: cover;
+}
+
+body{
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-size: cover;
+  
+}
+
+html{
+  background: url("backgroudnewspaper01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+}
+.container{
+      width: 330px; 
+      border-radius: 10px;
+      padding: 40px 30px;
+      margin-top: 100px;
+      box-shadow: -3px -3px 9px #aaa9a9a2,
+                  3px 3px 7px rgba(147, 149, 151, 0.671);
+                  background-color: rgba(255,255,255,0.13);
+                  backdrop-filter: blur(10px);
+  
+}
+.contenter {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: rgb(247, 233, 233);
+}
+
+.contenter {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+container input::placeholder{
+  color: whitesmoke;
+}
+input[type='fa-first-name'],
+input[type='fa-last-name'],
+input[type='ygmail'],
+input[type='password'],
+input[type='password_confirmation']
+{
+
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background-color: whitesmoke;
+}
+input[type='fa-first-name']:focus,
+input[type='fa-last-name']:focus,
+input[type='ygmail']:focus,
+input[type='password']:focus,
+input[type='password_confirmation']:focus{
+  background-color: #ccc;
+  outline: none;
+}
+.registerbtn{
+  background-color: teal;
+  color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin: auto;
+  opacity: 0.8;
+}
+.registerbtn:hover{
+  opacity: 1.4;     
+}
+
